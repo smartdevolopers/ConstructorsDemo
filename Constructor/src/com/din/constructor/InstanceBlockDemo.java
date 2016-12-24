@@ -3,22 +3,27 @@ package com.din.constructor;
 public class InstanceBlockDemo {
 
 	private static int count;
+	
+	//Instance Block
 	{
 		count++;
 	}
 
+	//Constructor without arguments
 	public InstanceBlockDemo() {
 		System.out.println("no-args Constructor");
-		
+
 	}
 
+	//Constructor with int arguments
 	public InstanceBlockDemo(int i) {
-		System.out.println("int arg constructor "+i);
-		//count++;
+		System.out.println("int arg constructor " + i);
+		// count++;
 	}
 
+	//Constructor with string arguments
 	public InstanceBlockDemo(String s) {
-		System.out.println("String arg Constructor "+ s);
+		System.out.println("String arg Constructor " + s);
 	}
 
 	public static void main(String[] args) {
